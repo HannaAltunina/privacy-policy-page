@@ -68,10 +68,15 @@
 .main-nav__link,
 .submenu-products__link,
 .submenu-company__link {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffc107), to(#ffc107));
+  background-image: -o-linear-gradient(#ffc107, #ffc107);
   background-image: linear-gradient(#ffc107, #ffc107);
   background-position: 0 100%;
   background-repeat: no-repeat;
   background-size: 0 4px;
+  -webkit-transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -ms-transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -o-transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -162,13 +167,21 @@
   .header__wrapper,
   .main-nav__list {
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   .header__wrapper {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .main-nav__item {
@@ -216,6 +229,4 @@
     background: #333;
     border-radius: 20px 20px 0 0;
   }
-
 }
-

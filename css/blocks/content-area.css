@@ -1,0 +1,141 @@
+.content-area {
+  width: 100%;
+  padding: 10px;
+  font-size: 4vw;
+  line-height: 28px;
+}
+
+.content-area__main-title {
+  font-weight: 400;
+  font-size: 4vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-area__list {
+  padding: 0;
+  list-style-position: inside;
+}
+
+.content-area__outside-list {
+  padding-left: 17px;
+  list-style-position: outside;
+}
+
+.content-area__list li {
+  padding: 10px 0;
+}
+
+.content-area__outside-item {
+  padding-left: 20px;
+}
+
+.content-area__title {
+  font-size: 4vw;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: bold;
+}
+
+.content-area__dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-area__dl dt {
+  font-weight: bold;
+  width: 27%;
+}
+
+.content-area__dl dd {
+  width: 65%;
+  margin-bottom: 20px;
+}
+
+.content-area__table {
+  border: 0;
+  width: 100%;
+}
+
+.content-area__table td {
+  vertical-align: top;
+  padding-bottom: 20px;
+}
+
+.content-area__table td:first-child {
+  width: 20%;
+}
+
+.content-area__table td:nth-child(2) {
+  width: 40%;
+}
+
+.content-area__table td:last-child {
+  width: 40%;
+}
+
+.content-table__data-type {
+  font-weight: bold;
+}
+
+.content-area__link {
+  text-decoration: none;
+  color: #5786ff;
+}
+
+.content-area__link:hover {
+  color: #0056b3;
+}
+
+
+@media(min-width: 768px) {
+  .content-area {
+    font-size: 16px;
+  }
+
+  .content-area__main-title {
+    font-size: 16px;
+  }
+
+  .content-area__title {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  
+  .content-area__dl dt {
+    font-weight: bold;
+    width: 30%;
+  }
+  
+  .content-area__dl dd {
+    width: 60%;
+  }
+  
+}
+
+@media(min-width: 990px) {
+  .content-area {
+    width: 990px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .content-area__main-title {
+    font-size: 16px;
+  }
+
+  .content-area__list .content-area__outside-item {
+    padding-left: 40px;
+  }
+}
