@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  min-height: 70px;
+  min-height: 71px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.95);
   padding-top: 33px;
@@ -144,6 +144,10 @@
     padding-top: 23px;
   }
 
+  .header__logo {
+    margin-left: 40px;
+  }
+
   .header__toggle {
     display: none;
   }
@@ -153,7 +157,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    width: 50%;
+    width: 60%;
     background-color: transparent;
     margin: 0;
     padding: 0;
@@ -176,6 +180,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+
+  .main-nav__list {
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: -14px;
   }
 
   .header__wrapper {
