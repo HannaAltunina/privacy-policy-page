@@ -177,8 +177,7 @@
   .content-area__outside-item {
     padding-left: 20px;
     margin-bottom: 20px;
-  }
-  
+  } 
 }
 
 @media(min-width: 990px) {
@@ -202,7 +201,6 @@
   .content-area__table td:last-child {
     width: 383px;
   }
-  
 
   .content-area__main-title {
     font-size: 18px;
